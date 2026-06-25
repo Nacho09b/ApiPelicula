@@ -1,0 +1,87 @@
+#--------------------------------------
+# Visual Studio
+#--------------------------------------
+#
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+build/
+
+# Roslyn cache directories
+*.ide/
+.vs/
+
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# TFS 2012 Local Workspace
+$tf/
+
+#--------------------------------------
+# Windows
+#--------------------------------------
+#
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Plugin files added by developers
+.editorconfig
+
+#--------------------------------------
+# Others
+#--------------------------------------
+#
+
+*.bak
+*.bat
+*.zip
+*.rar
+/BCOSolution/.idea/.idea.BCOSolution/.idea/workspace.xml
+/BCOSolution/.idea/.idea.BCOSolution/.idea/indexLayout.xml

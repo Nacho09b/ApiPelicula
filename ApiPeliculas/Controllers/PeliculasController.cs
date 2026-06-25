@@ -1,0 +1,179 @@
+﻿using ApiPeliculas.Models;
+using ApiPeliculas.Models.Dtos;
+using ApiPeliculas.Repository.IRepository;
+using AutoMapper;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace ApiPeliculas.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class PeliculasController : ControllerBase
+    {
+        private readonly IPeliculaRepositorio _peliculaRepositorio;
+        private readonly IMapper _mapper;
+
+        public PeliculasController(IPeliculaRepositorio peliculaRepositorio, IMapper mapper)
+        {
+            _peliculaRepositorio = peliculaRepositorio;
+            _mapper = mapper;
+        }
+
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public IActionResult GetPeliculas()
+        {
+            var peliculas = _peliculaRepositorio.GetPeliculas();
+            var listPeliculasDto = new List<PeliculaDto>();
+            foreach (var item in peliculas)
+            {
+                listPeliculasDto.Add(_mapper.Map<PeliculaDto>(item));
+            }
+            return Ok(listPeliculasDto);
+        }
+
+        // CORREGIDO: Cambiado el Name a "GetPeliculasEnCategoria" para evitar duplicados en la API
+        [HttpGet("{categoriaId:int}", Name = "GetPeliculasEnCategoria")]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult GetPeliculasEnCategoria(int categoriaId)
+        {
+            var peliculas = _peliculaRepositorio.GetPeliculasEnCategoria(categoriaId);
+
+            if (peliculas == null || peliculas.Count == 0)
+            {
+                return NotFound("No se encontraron películas en esa categoría.");
+            }
+
+            var listPeliculasDto = new List<PeliculaDto>();
+            foreach (var item in peliculas)
+            {
+                listPeliculasDto.Add(_mapper.Map<PeliculaDto>(item));
+            }
+            return Ok(listPeliculasDto);
+        }
+
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public IActionResult CrearPelicula([FromBody] CrearPeliculaDto crearPelicula)
+        {
+            if (crearPelicula == null)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (_peliculaRepositorio.ExistePelicula(crearPelicula.Nombre))
+            {
+                ModelState.AddModelError("", "La película ya existe.");
+                return BadRequest(ModelState);
+            }
+
+            var pelicula = _mapper.Map<Pelicula>(crearPelicula);
+            if (!_peliculaRepositorio.CrearPelicula(pelicula))
+            {
+                ModelState.AddModelError("", $"Algo salió mal al guardar la película {pelicula.Nombre}");
+                return StatusCode(500, ModelState);
+            }
+
+            // CORREGIDO: Ahora apunta correctamente al nuevo nombre único del endpoint
+            return CreatedAtRoute("GetPeliculasEnCategoria", new { categoriaId = pelicula.CategoriaId }, pelicula);
+        }
+
+        [HttpPatch("{peliculaId:int}", Name = "ActualizarPelicula")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public IActionResult ActualizarPelicula(int peliculaId, [FromBody] PeliculaDto peliculaDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var peliculaExiste = _peliculaRepositorio.GetPelicula(peliculaId);
+            
+            if (peliculaExiste == null)
+            {
+                return NotFound("La película no existe.");
+            }
+
+            //if (peliculaDto == null || peliculaDto.Id == 0 || peliculaDto.Id != peliculaId)
+            //{
+            //    ModelState.AddModelError("", "Los datos de la película son inválidos o el ID no coincide.");
+            //    return BadRequest(ModelState);
+            //}
+
+            var pelicula = _mapper.Map<Pelicula>(peliculaDto);
+            if (!_peliculaRepositorio.ActualizarPelicula(pelicula))
+            {
+                ModelState.AddModelError("", $"Algo salió mal al actualizar la película {pelicula.Nombre}");
+                return StatusCode(500, ModelState);
+            }
+            return NoContent();
+        }
+
+        [HttpDelete("{peliculaId:int}", Name = "BorrarPelicula")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public IActionResult BorrarPelicula(int peliculaId)
+        {
+            if (!_peliculaRepositorio.ExistePelicula(peliculaId))
+            {
+                return NotFound("La película no existe.");
+            }
+            var pelicula = _peliculaRepositorio.GetPelicula(peliculaId);
+            if (!_peliculaRepositorio.BorrarPelicula(pelicula))
+            {
+                ModelState.AddModelError("", $"Algo salió mal al eliminar la película {pelicula.Nombre}");
+                return StatusCode(500, ModelState);
+            }
+            return NoContent();
+        }
+
+        [HttpGet("BuscarPelicula")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public IActionResult BuscarPelicula(string nombre)
+        {
+            var peliculas = _peliculaRepositorio.BuscarPelicula(nombre);
+            if (peliculas == null || !peliculas.Any())
+            {
+                return NotFound("No se encontraron películas con ese nombre.");
+            }
+            var listPeliculasDto = new List<PeliculaDto>();
+            foreach (var item in peliculas)
+            {
+                listPeliculasDto.Add(_mapper.Map<PeliculaDto>(item));
+            }
+            return Ok(listPeliculasDto);
+        }
+
+        [HttpGet("GetPeliculasEnCategorias/{categoriaId:int}")]
+        public IActionResult GetPeliculasEnCategorias(int categoriaId)
+        {
+            var peliculas = _peliculaRepositorio.GetPeliculasEnCategoria(categoriaId);
+            if (peliculas == null || !peliculas.Any())
+            {
+                return NotFound("No se encontraron películas en esa categoría.");
+            }
+            var listPeliculasDto = new List<PeliculaDto>();
+            foreach (var item in peliculas)
+            {
+                listPeliculasDto.Add(_mapper.Map<PeliculaDto>(item));
+            }
+            return Ok(listPeliculasDto);
+        }
+    }
+}
