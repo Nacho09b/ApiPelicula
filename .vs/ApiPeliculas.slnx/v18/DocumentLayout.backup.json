@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|c:\\users\\ebaez.belltechla\\source\\repos\\api_curso\\apipeliculas\\apipeliculas\\migrations\\20260625135943_crearmodelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\migrations\\20260625135943_crearmodelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|c:\\users\\ebaez.belltechla\\source\\repos\\api_curso\\apipeliculas\\apipeliculas\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|c:\\users\\ebaez.belltechla\\source\\repos\\api_curso\\apipeliculas\\apipeliculas\\models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|c:\\users\\ebaez.belltechla\\source\\repos\\api_curso\\apipeliculas\\apipeliculas\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|c:\\users\\ebaez.belltechla\\source\\repos\\api_curso\\apipeliculas\\apipeliculas\\controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|c:\\users\\ebaez.belltechla\\source\\repos\\api_curso\\apipeliculas\\apipeliculas\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|c:\\users\\ebaez.belltechla\\source\\repos\\api_curso\\apipeliculas\\apipeliculas\\repository\\irepository\\icategoriarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F659176A-5776-9A36-A7EF-117733582FFB}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\repository\\irepository\\icategoriarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,25 +63,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PeliculaDto.cs",
-              "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Dtos\\PeliculaDto.cs",
-              "RelativeDocumentMoniker": "ApiPeliculas\\Models\\Dtos\\PeliculaDto.cs",
-              "ToolTip": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Dtos\\PeliculaDto.cs",
-              "RelativeToolTip": "ApiPeliculas\\Models\\Dtos\\PeliculaDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Title": "Pelicula.cs",
+              "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Pelicula.cs",
+              "RelativeDocumentMoniker": "ApiPeliculas\\Models\\Pelicula.cs",
+              "ToolTip": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Pelicula.cs",
+              "RelativeToolTip": "ApiPeliculas\\Models\\Pelicula.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T19:31:19.661Z",
+              "WhenOpened": "2026-06-25T14:00:31.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20260625135943_CrearModeloUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Migrations\\20260625135943_CrearModeloUsuario.cs",
+              "RelativeDocumentMoniker": "ApiPeliculas\\Migrations\\20260625135943_CrearModeloUsuario.cs",
+              "ToolTip": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Migrations\\20260625135943_CrearModeloUsuario.cs",
+              "RelativeToolTip": "ApiPeliculas\\Migrations\\20260625135943_CrearModeloUsuario.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwA8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T13:59:43.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "ApiPeliculas\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Usuario.cs",
+              "RelativeToolTip": "ApiPeliculas\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T13:54:08.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PeliculasController.cs",
               "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Controllers\\PeliculasController.cs",
               "RelativeDocumentMoniker": "ApiPeliculas\\Controllers\\PeliculasController.cs",
               "ToolTip": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Controllers\\PeliculasController.cs",
               "RelativeToolTip": "ApiPeliculas\\Controllers\\PeliculasController.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAwwDIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwLAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-24T14:16:34.719Z",
               "EditorCaption": ""
@@ -77,6 +115,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "ApiPeliculas\\Controllers\\CategoriasController.cs",
+              "ToolTip": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "ApiPeliculas\\Controllers\\CategoriasController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAYwF0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T16:47:33.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CrearPeliculaDto.cs",
+              "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Dtos\\CrearPeliculaDto.cs",
+              "RelativeDocumentMoniker": "ApiPeliculas\\Models\\Dtos\\CrearPeliculaDto.cs",
+              "ToolTip": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Dtos\\CrearPeliculaDto.cs",
+              "RelativeToolTip": "ApiPeliculas\\Models\\Dtos\\CrearPeliculaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T19:36:07.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ApiPeliculas\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ApiPeliculas\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T19:47:03.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Program.cs",
               "RelativeDocumentMoniker": "ApiPeliculas\\Program.cs",
@@ -88,33 +163,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoriasController.cs",
-              "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Controllers\\CategoriasController.cs",
-              "RelativeDocumentMoniker": "ApiPeliculas\\Controllers\\CategoriasController.cs",
-              "ToolTip": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Controllers\\CategoriasController.cs",
-              "RelativeToolTip": "ApiPeliculas\\Controllers\\CategoriasController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAYwF0AAABBAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "PeliculaDto.cs",
+              "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Dtos\\PeliculaDto.cs",
+              "RelativeDocumentMoniker": "ApiPeliculas\\Models\\Dtos\\PeliculaDto.cs",
+              "ToolTip": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Dtos\\PeliculaDto.cs",
+              "RelativeToolTip": "ApiPeliculas\\Models\\Dtos\\PeliculaDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T16:47:33.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-23T19:31:19.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CrearPeliculaDto.cs",
-              "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Dtos\\CrearPeliculaDto.cs",
-              "RelativeDocumentMoniker": "ApiPeliculas\\Models\\Dtos\\CrearPeliculaDto.cs",
-              "ToolTip": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Dtos\\CrearPeliculaDto.cs",
-              "RelativeToolTip": "ApiPeliculas\\Models\\Dtos\\CrearPeliculaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T19:36:07.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PeliculaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Repository\\PeliculaRepositorio.cs",
               "RelativeDocumentMoniker": "ApiPeliculas\\Repository\\PeliculaRepositorio.cs",
@@ -122,24 +183,11 @@
               "RelativeToolTip": "ApiPeliculas\\Repository\\PeliculaRepositorio.cs",
               "ViewState": "AgIAADoAAAAAAAAAAADwv1EAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T20:26:40.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-24T20:26:40.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "ApiPeliculas\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "ApiPeliculas\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T19:47:03.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ICategoriaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Repository\\IRepository\\ICategoriaRepositorio.cs",
               "RelativeDocumentMoniker": "ApiPeliculas\\Repository\\IRepository\\ICategoriaRepositorio.cs",
@@ -151,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "CategoriaDto.cs",
               "DocumentMoniker": "C:\\Users\\ebaez.BELLTECHLA\\source\\repos\\Api_Curso\\ApiPeliculas\\ApiPeliculas\\Models\\Dtos\\CategoriaDto.cs",
               "RelativeDocumentMoniker": "ApiPeliculas\\Models\\Dtos\\CategoriaDto.cs",

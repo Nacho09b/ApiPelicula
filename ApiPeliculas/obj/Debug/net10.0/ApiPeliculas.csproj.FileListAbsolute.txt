@@ -161,3 +161,4 @@ C:\Users\ebaez.BELLTECHLA\source\repos\Api_Curso\ApiPeliculas\ApiPeliculas\obj\D
 C:\Users\ebaez.BELLTECHLA\source\repos\Api_Curso\ApiPeliculas\ApiPeliculas\obj\Debug\net10.0\ApiPeliculas.pdb
 C:\Users\ebaez.BELLTECHLA\source\repos\Api_Curso\ApiPeliculas\ApiPeliculas\obj\Debug\net10.0\ApiPeliculas.genruntimeconfig.cache
 C:\Users\ebaez.BELLTECHLA\source\repos\Api_Curso\ApiPeliculas\ApiPeliculas\obj\Debug\net10.0\ref\ApiPeliculas.dll
+C:\Users\ebaez.BELLTECHLA\source\repos\Api_Curso\ApiPeliculas\ApiPeliculas\obj\Debug\net10.0\ApiPeliculas.sourcelink.json
