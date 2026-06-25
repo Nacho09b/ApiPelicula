@@ -2,7 +2,7 @@
 
 namespace ApiPeliculas.Models.Dtos
 {
-    public class UsuarioDatosDTO
+    public class UsuarioDatosDto
     {
         public string Id { get; set; }
         public string UserName { get; set; }

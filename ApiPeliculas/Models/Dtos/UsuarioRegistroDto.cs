@@ -10,6 +10,6 @@ namespace ApiPeliculas.Models.Dtos
         public string Nombre { get; set; }
         [Required(ErrorMessage = "La contraseña es requerida")]
         public string Password { get; set; }
-        
+        public string Role { get; set; }        
     }
 }
